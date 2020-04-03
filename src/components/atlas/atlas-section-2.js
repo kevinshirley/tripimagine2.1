@@ -3,13 +3,13 @@ import cx from 'classnames';
 import Fade from 'react-reveal/Fade';
 import Link from 'src/components/common/link';
 
-function AtlasSection2(props: any) {
+function AtlasSection2(props) {
   const { destinations } = props;
 
   let continents = destinations;
   continents = Object.entries(continents);
 
-  const prepareString = (obj: any) => {
+  const prepareString = (obj) => {
     var string = obj;
     // console.log('string', string);
     string = string.toString().toLowerCase();
@@ -35,7 +35,7 @@ function AtlasSection2(props: any) {
 
       <div className="destinations-container container-fluid">
         <div className="content row">
-          {continents.map((continent, i: number) => {
+          {continents.map((continent, i) => {
             const continentClasses = cx(
               `continent-${i+1}`,
             );

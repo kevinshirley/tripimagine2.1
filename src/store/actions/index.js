@@ -6,13 +6,13 @@ export function createTypes(base, types) {
   return res;
 }
 
-export const action = (type: any, payload = {}, meta = {}) => ({
+export const action = (type, payload = {}, meta = {}) => ({
   type,
   payload,
   meta,
 });
 
-export const UI: any = createTypes('UI', [
+export const UI = createTypes('UI', [
   'OPEN_MODAL',
   'CLOSE_MODAL',
   'OPEN_MENU',
@@ -28,5 +28,5 @@ export const ui = {
   openMenu: () => action(UI.OPEN_MENU),
   closeMenu: () => action(UI.CLOSE_MENU),
   setModalOpened: () => action(UI.IS_MODAL_OPENED),
-  selectPortfolio: (index: number) => action(UI.SELECT_PORTFOLIO, index),
+  selectPortfolio: (index) => action(UI.SELECT_PORTFOLIO, index),
 };

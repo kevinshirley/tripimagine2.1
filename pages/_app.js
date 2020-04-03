@@ -45,7 +45,7 @@ Root.getInitialProps = (async ({ Component, ctx }) => {
   return { 
     pageProps
   };
-}) as typeof App.getInitialProps;
+});
 
 // @ts-ignore
 // const AuthRoot = withAuthenticator(Root, true);

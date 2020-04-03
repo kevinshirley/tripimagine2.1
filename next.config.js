@@ -13,7 +13,7 @@ module.exports = withVideos(
         },
         webpack(config, options) {
           config.resolve.alias['src'] = path.join(__dirname, 'src');
-          config.resolve.extensions.push('.ts', '.tsx');
+          config.resolve.extensions.push('.ts', '.tsx', '.js');
           return config;
         },
       }),

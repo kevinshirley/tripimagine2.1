@@ -24,75 +24,75 @@ import EmojiFlagsIcon from '@material-ui/icons/EmojiFlags';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
 import PlaceIcon from '@material-ui/icons/Place';
 
-export const PORTFOLIO_ICON: JSX.Element = (
+export const PORTFOLIO_ICON = (
   <BurstModeOutlinedIcon />
 );
 
-export const IPHONE_ICON: JSX.Element = (
+export const IPHONE_ICON = (
   <PhoneIphoneIcon />
 );
 
-export const CLOSE_ICON: JSX.Element = (
+export const CLOSE_ICON = (
   <HighlightOffIcon />
 );
 
-export const MENU_ICON: JSX.Element = (
+export const MENU_ICON = (
   <MenuIcon />
 );
 
-export const MENU: JSX.Element = (
+export const MENU = (
   <span className="iconify menu-core-icon" data-icon="bx:bx-menu-alt-left" data-inline="false"></span>
 );
 
-export const OPEN_IN_NEW_ICON: JSX.Element = (
+export const OPEN_IN_NEW_ICON = (
   <OpenInNewIcon />
 );
 
-export const CODE_ICON: JSX.Element = (
+export const CODE_ICON = (
   <CodeIcon />
 );
 
-export const FLIGHT_TAKE_OFF_ICON: JSX.Element = (
+export const FLIGHT_TAKE_OFF_ICON = (
   <FlightTakeoffIcon />
 );
 
-export const ARROW_FORWARD_IOS_ICON: JSX.Element = (
+export const ARROW_FORWARD_IOS_ICON = (
   <ArrowRightIcon />
 );
 
-export const INSTAGRAM_ICON: JSX.Element = (
+export const INSTAGRAM_ICON = (
   <InstagramIcon />
 );
 
-export const FACEBOOK_ICON: JSX.Element = (
+export const FACEBOOK_ICON = (
   <FacebookIcon />
 );
 
-export const EMAIL_ICON: JSX.Element = (
+export const EMAIL_ICON = (
   <MailOutlineIcon />
 );
 
-export const ALTERNATE_EMAIL_ICON: JSX.Element = (
+export const ALTERNATE_EMAIL_ICON = (
   <AlternateEmailIcon />
 );
 
-export const FORMAT_SHAPES_ICON: JSX.Element = (
+export const FORMAT_SHAPES_ICON = (
   <FormatShapesIcon />
 );
 
-export const EMOJI_FLAGS_ICON: JSX.Element = (
+export const EMOJI_FLAGS_ICON = (
   <EmojiFlagsIcon />
 );
 
-export const BEACH_ACCESS_ICON: JSX.Element = (
+export const BEACH_ACCESS_ICON = (
   <BeachAccessIcon />
 );
 
-export const PLACE_ICON: JSX.Element = (
+export const PLACE_ICON = (
   <PlaceIcon />
 );
 
-export const SPACING: JSX.Element = (
+export const SPACING = (
   <>
     &nbsp;
   </>

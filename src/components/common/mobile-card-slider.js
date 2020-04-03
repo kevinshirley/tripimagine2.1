@@ -66,7 +66,7 @@ MediaSlider.proptypes = {
   alt: PropTypes.string,
 };
 
-export function CardSlider(props: any) {
+export function CardSlider(props) {
   const { cards, openModal, selectPortfolio } = props;
   const [slides] = useState(cards);
   const [slide, setSlide] = useState(slides[0]);

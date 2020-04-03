@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-function NextLink(props: any) {
+function NextLink(props) {
   const { children, href, className, as } = props;
   return (
     <Link as={as} href={href}>

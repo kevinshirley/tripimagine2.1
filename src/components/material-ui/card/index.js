@@ -9,7 +9,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { OPEN_IN_NEW_ICON, CODE_ICON } from 'src/components/material-ui/icons';
 
-export default function ImgMediaCard(props: any) {
+export default function ImgMediaCard(props) {
   const { 
     title, 
     description, 

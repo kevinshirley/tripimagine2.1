@@ -42,14 +42,11 @@ export default function TemporaryDrawer() {
     left: false,
   });
 
-  type DrawerSide = 'top' | 'left' | 'bottom' | 'right';
-  const toggleDrawer = (side: DrawerSide, open: boolean) => (
-    event: React.KeyboardEvent | React.MouseEvent,
-  ) => {
+  const toggleDrawer = (side, open) => {
     if (
       event.type === 'keydown' &&
-      ((event as React.KeyboardEvent).key === 'Tab' ||
-        (event as React.KeyboardEvent).key === 'Shift')
+      ((event).key === 'Tab' ||
+        (event).key === 'Shift')
     ) {
       return;
     }
@@ -57,7 +54,7 @@ export default function TemporaryDrawer() {
     setState({ ...state, [side]: open });
   };
 
-  const sideList = (side: DrawerSide) => (
+  const sideList = (side) => (
     <div
       className={classes.list}
       role="presentation"

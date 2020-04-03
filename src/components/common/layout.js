@@ -4,7 +4,7 @@ import Head from 'next/head';
 import 'bootstrap/dist/css/bootstrap-reboot.min.css';
 import 'src/styles/app.scss';
 
-function Layout(props: any) {
+function Layout(props) {
   return (
     <>
       <Head>
