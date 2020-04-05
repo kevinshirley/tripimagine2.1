@@ -1,25 +1,16 @@
 import React from 'react';
 import cx from 'classnames';
+import * as R from 'ramda';
 import Fade from 'react-reveal/Fade';
 import Link from 'src/components/common/link';
+import { spaceToDash } from 'src/utils/string';
+import continentMedia from 'src/utils/continent-asset';
 
 function AtlasSection2(props) {
   const { destinations } = props;
 
   let continents = destinations;
   continents = Object.entries(continents);
-
-  const prepareString = (obj) => {
-    var string = obj;
-    // console.log('string', string);
-    string = string.toString().toLowerCase();
-
-    if(string.indexOf(' ') >= 0){
-      string = string.replace(/\s+/g, '-');
-    }
-
-    return string;
-  };
 
   return (
     <section className="atlas-section-2">
@@ -45,16 +36,14 @@ function AtlasSection2(props) {
             objContinent = objContinent[1];
 
             const upperContinent = continent[0];
-            const lowerContinent = prepareString(continent[0]);
-
-            const imgUrl = `http://media.tripimagine.com/img/${lowerContinent}-with-trip-imagine.jpg`;
+            const lowerContinent = spaceToDash(R.toLower(continent[0]));
 
             return (
               <div className={continentClasses} key={i}>
                 <Fade bottom key={i}>
-                  <Link as={`/atlas/${lowerContinent}`} href={`/continent?${lowerContinent}`} key={i}>
+                  <Link as={`/continent/${lowerContinent}`} href={`/continent?name=${lowerContinent}`} key={i}>
                     <div className="destination" key={i}>
-                      <img src={ imgUrl } alt={upperContinent} />
+                      <img src={ continentMedia(lowerContinent) } alt={upperContinent} />
                       <div className="text"><span>{upperContinent}</span></div>
                     </div>
                   </Link>

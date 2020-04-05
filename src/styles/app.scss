@@ -2457,10 +2457,19 @@ h4 {
 		padding-top: 30px;
 		padding-bottom: 30px;
 		width: 100%;
+
 		.title-container {
 			width: 40%;
-			margin-left: 25%;
 			margin-top: 30px;
+			margin-left: 25%;
+
+			@media screen and (max-width: 680px) {
+				margin-left: 15%;
+			}
+
+			@media screen and (max-width: 420px) {
+				margin-left: 10%;
+			}
 
 			.content {
 				padding: 25px 0;
@@ -2473,6 +2482,14 @@ h4 {
 					font-weight: bolder;
 					font-size: 2.7em;
 					padding-left: 12%;
+
+					@media screen and (max-width: 600px) {
+						font-size: 1.8em !important;
+					}
+
+					@media screen and (max-width: 400px) {
+						white-space: initial;
+					}
 				}
 			}
 		}
@@ -2481,9 +2498,10 @@ h4 {
 
 /* continent-section-2 */
 .continent-section-2 {
-	padding: 45px 20px 50px 20px;
+	padding: 45px 20px 30px 20px;
 	width: 100%;
-	background: #fff;
+	background: $white;
+
 	.back-to-atlas {
 		padding-left: 5%;
 		margin-bottom: 50px;
@@ -2492,15 +2510,42 @@ h4 {
 			font-size: 1.4em;
 		}
 	}
+
 	.destinations-container {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
 		.content {
 			width: 95%;
 			display: flex;
 			justify-content: space-between;
+
+			.img {
+				width: 60%;
+
+				img {
+					width: 100%;
+				}
+			}
+
+			.text {
+				width: 40%;
+				margin-left: 4%;
+			}
+
+			@media screen and (max-width: 720px) {
+				flex-direction: column;
+
+				.img {
+					width: 100%;
+				}
+	
+				.text {
+					width: 100%;
+				}
+			}
 		}
 	}
 }
@@ -4557,19 +4602,6 @@ h4 {
 		}
 	}
 	.atlas-section-1 {
-		// background: #fff url("./src/assets/svg/aztec.svg") top left/60px repeat-y;
-		.overlay {
-			.title-container {
-				.content {
-					h2 {
-						font-size: 2em;
-						// padding-left: 7%;
-					}
-				}
-			}
-		}
-	}
-	.continent-section-1 {
 		// background: #fff url("./src/assets/svg/aztec.svg") top left/60px repeat-y;
 		.overlay {
 			.title-container {

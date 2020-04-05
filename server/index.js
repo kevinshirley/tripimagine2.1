@@ -13,11 +13,22 @@ app
     const server = express();
     // Routes
     const users = require("./routes/users");
+    const destinations = require("./routes/destinations");
+    const blog = require("./routes/blog");
 
     server.use("/api", users);
+    server.use("/api", destinations);
+    server.use("/api", blog);
 
     server.get('*', (req, res) => {
       return handle(req, res);
+    });
+
+    server.get('/continent/:name', (req, res) => {
+      console.log('/continent/:name on the server');
+      const actualPage = '/continent';
+      const queryParams = { name: req.params.name };
+      return app.render(req, res, actualPage, queryParams);
     });
 
     server.listen(PORT, err => {

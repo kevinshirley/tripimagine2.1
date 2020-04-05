@@ -1,4 +1,4 @@
-import { all, fork } from 'redux-saga/effects';
+import { all } from 'redux-saga/effects';
 import 'isomorphic-unfetch';
 import { 
   watchOpenMenu, 
@@ -7,6 +7,10 @@ import {
   watchCloseModal, 
   watchLocationChange,
 } from 'src/store/sagas/ui';
+import { 
+  watchGetDestinations,
+  watchGetDestination,
+} from 'src/store/sagas/destinations';
 
 function* rootSaga() {
   yield all([
@@ -15,6 +19,8 @@ function* rootSaga() {
     watchOpenModal(),
     watchCloseModal(),
     watchLocationChange(),
+    watchGetDestinations(),
+    watchGetDestination(),
   ]);
 }
 

@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AtlasSection1 from 'src/components/atlas/atlas-section-1';
 import AtlasSection2 from 'src/components/atlas/atlas-section-2';
 
-function Atlas({ destinations }) {
+function Atlas({ destinations, getDestinations }) {
+  useEffect(() => {
+    getDestinations();
+  }, [getDestinations]);
+
   return (
     <React.Fragment>
       <AtlasSection1 />

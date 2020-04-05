@@ -22,6 +22,13 @@ export const UI = createTypes('UI', [
   'SELECT_PORTFOLIO',
 ]);
 
+export const DESTINATIONS = createTypes('DESTINATIONS', [
+  'GET_DESTINATION',
+  'GET_DESTINATIONS',
+  'SET_DESTINATIONS',
+  'SET_DESTINATION',
+]);
+
 export const ui = {
   openModal: () => action(UI.OPEN_MODAL),
   closeModal: () => action(UI.CLOSE_MODAL),
@@ -29,4 +36,11 @@ export const ui = {
   closeMenu: () => action(UI.CLOSE_MENU),
   setModalOpened: () => action(UI.IS_MODAL_OPENED),
   selectPortfolio: (index) => action(UI.SELECT_PORTFOLIO, index),
+};
+
+export const destinations = {
+  getDestination: continent => action(DESTINATIONS.GET_DESTINATION, { continent }),
+  getDestinations: () => action(DESTINATIONS.GET_DESTINATIONS),
+  setDestinations: (destinations) => action(DESTINATIONS.SET_DESTINATIONS, destinations),
+  setDestination: (destination) => action(DESTINATIONS.SET_DESTINATION, destination),
 };
