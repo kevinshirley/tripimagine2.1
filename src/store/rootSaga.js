@@ -11,6 +11,9 @@ import {
   watchGetDestinations,
   watchGetDestination,
 } from 'src/store/sagas/destinations';
+import { 
+  watchGetPosts,
+} from 'src/store/sagas/blog';
 
 function* rootSaga() {
   yield all([
@@ -21,6 +24,7 @@ function* rootSaga() {
     watchLocationChange(),
     watchGetDestinations(),
     watchGetDestination(),
+    watchGetPosts(),
   ]);
 }
 

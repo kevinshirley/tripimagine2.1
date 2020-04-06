@@ -1,10 +1,17 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 function BlogSection1() {
   return (
-    <div className="blog-section-1">
-      Blog 1
-    </div>
+    <section className="contact-section-1">
+      <div className="overlay">
+        <div className="title-container">
+          <div className="content">
+            <Fade bottom><h2>Blog</h2></Fade>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 

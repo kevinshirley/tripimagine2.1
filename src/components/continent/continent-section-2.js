@@ -11,7 +11,6 @@ function ContinentSection2({ destination }) {
       <div className="back-to-atlas">
         <Fade bottom><Link href="/atlas">← Back to Atlas</Link></Fade>
       </div>
-
       <div className="destinations-container container-fluid">
         <div className="content row">
           <div className="img col-sm-6">

@@ -22,8 +22,6 @@ function* getDestination(data) {
   const { continent } = data.payload;
   const allDestinationsObject = yield select(selectDestinations);
   const allDestinations = indexedObjectToArray(allDestinationsObject);
-  // console.log('continent', continent);
   const destination = R.filter(item => item.continent === continent, allDestinations);
-  // console.log('destination', destination[0]);
   yield put(destinations.setDestination(destination[0]));
 }

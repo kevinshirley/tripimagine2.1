@@ -16,6 +16,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import FlightTakeoffIcon from '@material-ui/icons/FlightTakeoff';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
@@ -58,6 +59,10 @@ export const FLIGHT_TAKE_OFF_ICON = (
 
 export const ARROW_FORWARD_IOS_ICON = (
   <ArrowRightIcon />
+);
+
+export const ARROW_LEFT_ICON = (
+  <ArrowLeftIcon />
 );
 
 export const INSTAGRAM_ICON = (
