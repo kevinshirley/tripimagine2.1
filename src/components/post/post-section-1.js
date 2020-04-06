@@ -4,7 +4,6 @@ import Link from 'src/components/common/link';
 import { ARROW_LEFT_ICON, SPACING } from 'src/components/material-ui/icons';
 
 function PostSection1({ title }) {
-  console.log('title', title);
   return (
     <section className="contact-section-1 post-section-1">
       <div className="overlay">
